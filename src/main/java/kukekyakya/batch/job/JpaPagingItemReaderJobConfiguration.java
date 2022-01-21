@@ -41,7 +41,7 @@ public class JpaPagingItemReaderJobConfiguration {
                 .build();
     }
 
-    @Bean
+    @Bean(destroyMethod="")
     public JpaPagingItemReader<Pay> jpaPagingItemReader() {
         return new JpaPagingItemReaderBuilder<Pay>()
                 .name("jpaPagingItemReader")
